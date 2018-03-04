@@ -17,7 +17,7 @@
 			<% if user_signed_in? %>
 			 <% if @message.user_id == current_user.id %>
 				<%= link_to "編集", edit_message_path(@message), class: 'btn btn-default btn-each' %>
-				<%= link_to "削除", message_path(@message), method: :delete, data:{confirm: "Are you sure?"}, class: 'btn btn-danger btn-each' %>
+				<%= link_to "削除", message_path(@message), method: :delete, data:{confirm: "削除してもよろしいですか?"}, class: 'btn btn-danger btn-each' %>
 				<% end %>
 			<% end %>
 		</div>
